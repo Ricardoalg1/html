@@ -25,8 +25,8 @@ function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   // Dibujar la órbita rotando sobre su eje
-  ctx.strokeStyle = "red";
-  ctx.lineWidth = 2;
+  ctx.strokeStyle = "green";
+  ctx.lineWidth = 3;
 
   ctx.beginPath();
   for (var i = 0; i < points.length; i++) {
