@@ -9,7 +9,7 @@ window.onload = function () {
   canvas.height = 400;
 
   // Generar puntos en 3D para la órbita
-  for (var t = 0; t <= Math.PI * 2; t += 0.1) {
+  for (var t = 0; t <= Math.PI*2 ; t += 0.1) {
     var x = 50 * Math.cos(t);
     var y = 50 * Math.sin(t);
     var z = 0;
@@ -26,7 +26,7 @@ function animate() {
 
   // Dibujar la órbita rotando sobre su eje
   ctx.strokeStyle = "green";
-  ctx.lineWidth = 3;
+  ctx.lineWidth = 1;
 
   ctx.beginPath();
   for (var i = 0; i < points.length; i++) {

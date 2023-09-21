@@ -5,7 +5,7 @@ var count = 0;
 var points = [];
 
 window.onload = function () {
-  canvas = document.getElementsByTagName("canvas")[0];
+  canvas = document.getElementById("one");
   ctx = canvas.getContext("2d");
   canvas.width = canvas.height = 400;
   ctx.fillStyle = "rgba(255,255,255,0)";
@@ -36,7 +36,7 @@ function rus() {
 
   var tim = count / 5;
 
-  for (var e = 0; e < 3; e++) {
+  for (var e = 0; e < 5; e++) {
     tim *= 1.7;
     var s = 1 - e / 3;
     a = tim / 59;
