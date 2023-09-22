@@ -4,10 +4,9 @@
 }
 
 canvas {
-  position: relative;
+  border: 2px solid rgb(175, 175, 175);
+  border-radius: 2%;
   top: 50%;
   left: 50%;
-  margin-left: -50vmin;
-  width: 100vmin;
-  height: 100vmin;
+  margin-left: 25%;
 }
