@@ -1,8 +1,8 @@
 var canvas, ctx;
 var count = 0;
 var points = [];
-var MAX =30;
-var MAX_FRAMES = 500;
+var MAX = 50;
+var MAX_FRAMES = 1000;
 
 window.onload = function () {
   canvas = document.getElementById("one");
@@ -16,21 +16,21 @@ window.onload = function () {
   for (var a = 0; a < MAX; a++) {
     points.push([-Math.cos(r), -Math.sin(r), 0]);
     r += (Math.PI * 2) / MAX;
-    console.log('for1 :>> ', points);
+    console.log("for1 :>> ", points);
   }
 
   for (var a = 0; a < MAX; a++) {
     points.push(0, points[a][0], -points[a][1]);
-     console.log("for2 :>> ", points);
+    console.log("for2 :>> ", points);
   }
 
   for (var a = 0; a < MAX; a++) {
     points.push(points[a][1], 0, points[a][0]);
-      console.log("for3 :>> ", points);
+    console.log("for3 :>> ", points);
   }
 
   animate();
- console.log("points :>> ", points);
+  console.log("points :>> ", points);
 };
 
 function animate() {
@@ -41,9 +41,9 @@ function animate() {
 
   var tim = count / 3;
 
-  for (var e = 0; e < 30; e++) {
-    tim *= 1.1;
-    var s = 1 - e / 30;
+  for (var e = 0; e < 20; e++) {
+    tim *= 1.2;
+    var s = 1 - e / 20;
     var a = tim / 59;
     var yp = Math.cos(a);
     var yp2 = Math.sin(a);
@@ -71,7 +71,7 @@ function animate() {
     // console.log("p2 :>> ", p2);
 
     s *= 120;
-    for (var d = 0; d < 1; d++) {
+    for (var d = 0; d < 3; d++) {
       for (var a = 0; a < MAX; a++) {
         const b = p2[d * MAX + a];
         // console.log("b :>> ", b);
